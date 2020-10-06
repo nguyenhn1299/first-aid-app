@@ -1,0 +1,12 @@
+{
+  "name": "first-aid-app",
+  "displayName": "first-aid-app",
+  "expo": {
+    "name": "first-aid-app",
+    "slug": "first-aid-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
