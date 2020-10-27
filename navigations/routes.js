@@ -5,7 +5,8 @@ import {AppLoading} from 'expo';
 import {NavigationContainer} from '@react-navigation/native'
 import {createStackNavigator} from '@react-navigation/stack'
 import { navTitleStyle } from "../styles/theme";
-import {Home} from '../src/screens'
+import {Home, SituationList} from '../src/screens';
+
 
 
 const Routes = () => {
@@ -22,7 +23,8 @@ const Routes = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator navTitleStyle={navTitleStyle}>
-                <Stack.Screen name="Home" component={Home}/>
+                <Stack.Screen name="Home" component={Home.Home} options={Home.navigationOptions}/>
+                <Stack.Screen name="SituationList" component={SituationList} />
             </Stack.Navigator>
         </NavigationContainer>
     )
